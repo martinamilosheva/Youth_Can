@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+main {
+  @extend %wrap;
+
+  .about-us {
+    @extend %section;
+    @include mix.flex-container($flex-direction: row , $align-items:normal);
+
+    @include mix.mobile-l-styles {
+      flex-direction: column;
+    }
+
+    .paragraph {
+      flex-basis: 50%;
+
+      h2 {
+        text-align: start;
+      }
+    }
+
+    .team-picture {
+      text-align: center;
+      flex-basis: 50%;
+    }
+  }
+}

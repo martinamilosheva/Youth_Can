@@ -1,0 +1,45 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: var.$font-family-base;
+  font-weight: var.$font-weight-base;
+  line-height: var.$line-height-base;
+}
+
+h1 {
+  font-size: var.$heading-size-bigger;
+
+  @include mix.tablet-styles {
+    font-size: var.$heading-size-standard;
+  }
+}
+
+h2 {
+  font-size: var.$heading-size-big;
+  margin-bottom: var.$gutter-base * 1.5;
+  text-align: center;
+}
+
+h3 {
+  font-size: var.$heading-size-standard;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: var.$font-size-small;
+  margin-bottom: 20px;
+
+  @include mix.mobile-l-styles {
+      font-size: var.$font-size-base;
+    }
+}
+
+h5 {
+  margin-top: var.$gutter-small;
+}

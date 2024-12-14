@@ -1,0 +1,112 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+footer {
+  background-color: var.$background-color-secondary;
+}
+
+.contact {
+  @extend %section;
+
+  .heading {
+    text-align: center;
+
+    h2 {
+      margin-bottom: var.$gutter-medium;
+    }
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  .container-contact {
+    display: flex;
+    width: 60%;
+    gap: var.$gutter-base;
+    margin-top: var.$gutter-base * 2;
+
+    @include mix.tablet-styles {
+      width: 100%;
+      padding-inline: var.$gutter-medium;
+    }
+
+    @include mix.mobile-l-styles {
+      flex-direction: column;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: var.$gutter-base;
+      width: 50%;
+      font-size: 18px;
+
+      @include mix.mobile-l-styles {
+        width: 100%;
+      }
+
+      .contact-info {
+        i {
+          margin-right: 5px;
+        }
+
+        p:last-child {
+          color: var.$text-color-subtitle;
+        }
+      }
+
+      .social-icons {
+        gap: var.$gutter-small;
+        display: flex;
+
+        li {
+          background-color: var.$icon-background;
+          padding: var.$gutter-small;
+          border-radius: 5px;
+
+          i {
+            font-size: 20px;
+            color: black;
+          }
+        }
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      gap: var.$gutter-small;
+
+      @include mix.mobile-l-styles {
+        width: 100%;
+      }
+
+      input,
+      textarea {
+        padding: var.$gutter-small;
+        border-radius: 10px;
+        border: 1px solid black;
+      }
+
+      .btn {
+        text-transform: uppercase;
+        background-color: var.$btn-primary;
+        color: var.$text-color-base;
+        font-weight: bold;
+        padding: var.$gutter-medium;
+        border: 1px solid black;
+        border-radius: var.$gutter-small;
+        transition: color 0.3s ease-in, background-color 0.3s ease-out;
+
+        &:hover {
+          background-color: var.$btn-hover;
+          color: black;
+        }
+      }
+    }
+  }
+}

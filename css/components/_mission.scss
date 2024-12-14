@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.vision-mission {
+  @extend %section;
+  @include mix.flex-container($flex-direction:row , $align-items:stretch);
+
+  @include mix.mobile-l-styles {
+    flex-direction: column;
+  }
+
+  .card {
+    @include mix.card($width: 35%);
+
+    @include mix.tablet-styles {
+      width: 100%;
+    }
+
+    i {
+      font-size: var.$font-size-big;
+      color: var.$btn-primary;
+    }
+  }
+
+  .mission {
+    background-color: var.$background-color-secondary;
+  }
+}

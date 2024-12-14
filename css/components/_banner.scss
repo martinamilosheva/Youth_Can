@@ -1,0 +1,52 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+header {
+  background: linear-gradient(
+      260deg,
+      rgba(237, 235, 235, 0.08167016806722693) 0%,
+      rgba(22, 21, 21, 0.7891491596638656) 50%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("../images/banner.png");
+  background-attachment: fixed;
+  background-position: top right;
+  background-repeat: no-repeat;
+  height: 80%;
+
+  @include mix.mini-laptop-styles {
+    background-position: center top;
+  }
+
+  nav {
+    @extend %wrap;
+    @extend %section;
+  }
+
+  .heading {
+    @extend %content-wrap;
+    color: var.$text-color-base;
+
+    @include mix.tablet-styles {
+      width: 80%;
+    }
+  }
+
+  .logo {
+    width: 120px;
+    margin-bottom: var.$gutter-base;
+  }
+
+  .button {
+    @extend %button;
+  }
+
+  p {
+    margin-top: var.$gutter-medium;
+
+    i {
+      color: var.$btn-hover;
+    }
+  }
+}

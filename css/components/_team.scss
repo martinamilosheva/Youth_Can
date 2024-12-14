@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.team {
+  @extend %section;
+
+  .card-container {
+    @extend %card-container;
+
+    .person-card {
+      width: calc(25% - var.$gutter-base);
+      text-align: center;
+
+      @include mix.mobile-l-styles {
+         width: 100%;
+        }
+
+      img {
+        width: 130px;
+        height: 130px;
+        line-height: 130px;
+        border-radius: 50%;
+      }
+
+      p {
+        font-size: 12px;
+        margin-top: var.$gutter-small;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as var;
+@use "../abstracts/mixins" as mix;
+@use "sass:math";
+
+.activities {
+  @extend %section;
+  @include mix.flex-container($flex-direction:column , $align-items:center);
+
+  .picture-container {
+    @extend %card-container;
+    width: 80%;
+    gap: var.$gutter-small;
+
+    @include mix.tablet-styles {
+      width: 100%;
+    }
+
+    img {
+      width: calc(25% - var.$gutter-small);
+      height: 200px;
+      object-fit: cover;
+
+      @include mix.tablet-styles {
+        height: 110px;
+      }
+
+      @include mix.mobile-l-styles {
+        width: calc(50% - var.$gutter-small);
+        height: 80px;
+      }
+    }
+  }
+
+  .button {
+    @extend %button;
+  }
+}

@@ -1,0 +1,97 @@
+@use "../abstracts/variables" as var;
+@use "sass:math";
+
+// RESPONSIVE LAPTOP FIRST DESIGN MIXINS
+@mixin mini-laptop-styles {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tablet-styles {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile-l-styles {
+  @media (max-width: 425px) {
+    @content;
+  }
+}
+
+@mixin card($width) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: $width;
+  padding: var.$gutter-medium;
+  text-align: center;
+  border-radius: var.$gutter-medium;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
+@mixin flex-container($flex-direction, $align-items) {
+  display: flex;
+  flex-direction: $flex-direction;
+  justify-content: center;
+  align-items: $align-items;
+  gap: var.$gutter-base;
+}
+
+%section {
+  padding-block: var.$gutter-base;
+
+  @include mobile-l-styles {
+    padding-block: var.$gutter-medium;
+  }
+}
+
+%wrap {
+  width: 80%;
+  margin-inline: auto;
+
+  @include mini-laptop-styles {
+    width: 100%;
+    padding-inline: var.$gutter-medium;
+  }
+}
+
+%content-wrap {
+  width: 50%;
+  text-align: left;
+}
+
+%button {
+  text-align: center;
+  padding: var.$gutter-medium;
+  border-top-left-radius: var.$gutter-small;
+  border-bottom-right-radius: var.$gutter-small;
+  background-color: var.$btn-primary;
+  color: var.$text-color-base;
+  display: inline-block;
+  font-weight: bold;
+  transition: 0.3s color ease-in, background-color 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+
+  &:hover {
+    background-color: var.$btn-hover;
+    color: var.$text-color-primary;
+    transform: scale(1.1);
+  }
+
+  i {
+    margin-left: var.$gutter-small;
+  }
+}
+
+%card-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: var.$gutter-base;
+}
+
