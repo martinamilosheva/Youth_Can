@@ -30,7 +30,6 @@ This project is structured using SASS to ensure a clean, maintainable, and scala
 
 Abstracts: This folder contains the foundational building blocks of the project:
     _mixins.scss: Here, I’ve written reusable code for patterns that occur multiple times across the project. By using mixins and extends, I avoid repetition and make the codebase more DRY (Don't Repeat Yourself), keeping it concise and efficient.
-
     _variables.scss: This file holds variables for common design elements like colors, font-sizes, spacing (margins and padding), and more. The use of variables makes it easy to update styles across the entire project by changing a single value in one place, ensuring consistency and simplifying future modifications.
 
 Components: The Components folder contains code for individual sections of the page, written in a modular way. Each section of the website (such as the hero banner, about us, testimonials, etc.) is organized in its own file, making it easy to locate and modify specific components when necessary. This structure ensures that the code for each section is self-contained and straightforward to manage.
