@@ -3,29 +3,24 @@
 @use "sass:math";
 
 header {
-   background: linear-gradient(
-      260deg,
-      rgba(237, 235, 235, 0.08167016806722693) 0%,
-      rgba(22, 21, 21, 0.7891491596638656) 50%,
-      rgba(0, 0, 0, 1) 100%
-    ),
-    url("../images/banner.png");
   background: -webkit-linear-gradient(
       260deg,
       rgba(237, 235, 235, 0.08167016806722693) 0%,
-      rgba(22, 21, 21, 0.7891491596638656) 50%,
+      rgba(22, 21, 21, 0.8891491596638656) 50%,
       rgba(0, 0, 0, 1) 100%
     ),
     url("../images/banner.png");
+  background: linear-gradient(
+      260deg,
+      rgba(237, 235, 235, 0.08167016806722693) 0%,
+      rgba(22, 21, 21, 0.8891491596638656) 50%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("../images/banner.png"); /*specific gradient for Safari browser*/
   background-attachment: fixed;
-  background-position: top right;
+  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
   height: 80%;
-
-  @include mix.mini-laptop-styles {
-    background-position: center top;
-  }
 
   nav {
     @extend %wrap;
