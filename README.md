@@ -1,14 +1,15 @@
 # YouthCan_Project_MartinaMilosheva
-Laptop
-![Project on Laptop](./screenshots/YouthCan-laptop.png)
-![Project on Tablet](./screenshots/YouthCan-tablet.png)
-![Project on Mobile](./screenshots/YouthCan-mobile.png)
 
-This website is also deployed on Netlify and you can check it [HERE](https://youth-can.netlify.app/)
+
+![Project on Laptop] <img src="./screenshots/YouthCan-laptop.png" width="300">
+![Project on Tablet] <img src="./screenshots/YouthCan-tablet.png" width="300">
+![Project on Mobile] <img src="./screenshots/YouthCan-mobile.png" width="300">
+
+This website is also deployed on Netlify and you can check it [HERE](https://youth-can.netlify.app/).
 
 ## Table of Contents 
 1. [Instructions of running the project](#run)
-2. [Technologies](#technologies)
+2. [Technologies used](#technologies)
 3. [Brief](#brief)
 4. [Description of the structure](#description)
 
