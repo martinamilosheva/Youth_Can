@@ -1,10 +1,6 @@
 # YouthCan_Project_MartinaMilosheva
 
-
  <img src="./screenshots/YouthCan-laptop.png" width="300">
- <img src="./screenshots/YouthCan-tablet.png" width="300">
- <img src="./screenshots/YouthCan-mobile.png" width="300">
- <img src="./screenshots/YouthCan-mobile2.png" width="300">
 
 This website is also deployed on Netlify and you can check it [HERE](https://youth-can.netlify.app/).
 
