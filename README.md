@@ -1,14 +1,24 @@
-# Youth-Can_Project-MartinaMilosheva-FE21
+# YouthCan_Project_MartinaMilosheva
+Laptop
+![Project on Laptop](./screenshots/YouthCan-laptop.png)
+![Project on Tablet](./screenshots/YouthCan-tablet.png)
+![Project on Mobile](./screenshots/YouthCan-mobile.png)
+
+This website is also deployed on Netlify and you can check it [HERE](https://youth-can.netlify.app/)
 
 ## Table of Contents 
 1. [Instructions of running the project](#run)
-2. [Brief](#brief)
-3. [Description of the structure](#description)
+2. [Technologies](#technologies)
+3. [Brief](#brief)
+4. [Description of the structure](#description)
 
 ## Run
 To get started with this project, follow these steps:
 1. Clone the repository in the program that you use for writing code.
 2. Open the index.html with your favourite browser.
+
+## Technologies used in this project 
+HTML, CSS, SASS, Bootstrap 5 and GIT.
 
 ## Brief
 This project is a landing page for the Youth Can association, developed for marketing and promotional purposes. Built using SASS combined with Bootstrap, the page is structured for both responsiveness and visual appeal. The Hero Banner at the top features an engaging image with a prominent title and a call-to-action button that links to their Instagram page. Below, the About Us section provides a detailed overview of the organization's goals, while visually impactful cards highlight the association's mission and vision.

@@ -139,17 +139,12 @@ h5 {
   margin-top: 0.625rem;
 }
 
-header { /*specific gradient for Safari browser*/
+header {
   background: linear-gradient(260deg, rgba(237, 235, 235, 0.0816701681) 0%, rgba(22, 21, 21, 0.8891491597) 50%, rgb(0, 0, 0) 100%), url("../images/banner.png");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   height: 80%;
-}
-@media (max-width: 425px) {
-  header {
-    background-position: center top;
-  }
 }
 header .heading {
   color: #fff;
@@ -285,10 +280,12 @@ main .about-us .team-picture {
   }
 }
 .team .card-container .person-card img {
-  width: 130px;
-  height: 130px;
-  line-height: 130px;
+  width: 140px;
+  height: 140px;
+  line-height: 140px;
   border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .team .card-container .person-card p {
   font-size: 12px;
