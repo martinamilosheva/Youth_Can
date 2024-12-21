@@ -3,7 +3,14 @@
 @use "sass:math";
 
 header {
-  background: linear-gradient(
+   background: linear-gradient(
+      260deg,
+      rgba(237, 235, 235, 0.08167016806722693) 0%,
+      rgba(22, 21, 21, 0.7891491596638656) 50%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("../images/banner.png");
+  background: -webkit-linear-gradient(
       260deg,
       rgba(237, 235, 235, 0.08167016806722693) 0%,
       rgba(22, 21, 21, 0.7891491596638656) 50%,
@@ -12,6 +19,7 @@ header {
     url("../images/banner.png");
   background-attachment: fixed;
   background-position: top right;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 80%;
 
