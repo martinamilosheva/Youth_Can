@@ -6,28 +6,17 @@
   @extend %section;
 
   .card-container {
-    @extend %card-container;
-
-    @include mix.tablet-styles {
-      gap: var.$gutter-medium;
-    }
+    @include mix.flex-container($flex-direction: row, $align-items: stretch);
 
     @include mix.mobile-l-styles {
       flex-direction: column;
-      gap: var.$gutter-base;
     }
 
     .card {
       @include mix.card($width: calc(33.333% - var.$gutter-base));
-      height: 400px;
-
-      @include mix.tablet-styles {
-        height: 460px;
-      }
 
       @include mix.mobile-l-styles {
         width: 100%;
-        height: 420px;
       }
 
       p {

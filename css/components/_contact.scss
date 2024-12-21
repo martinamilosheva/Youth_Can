@@ -12,6 +12,10 @@ footer {
   .heading {
     text-align: center;
 
+    p {
+      font-size: 15px;
+    }
+
     h2 {
       margin-bottom: var.$gutter-medium;
     }
