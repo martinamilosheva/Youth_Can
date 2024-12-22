@@ -140,6 +140,7 @@ h5 {
 }
 
 header {
+  background-image: -webkit-linear-gradient(200deg, rgba(237, 235, 235, 0.0816701681) 0%, rgba(22, 21, 21, 0.8891491597) 50%, rgb(0, 0, 0) 100%), url("../images/banner.png");
   background: linear-gradient(260deg, rgba(237, 235, 235, 0.0816701681) 0%, rgba(22, 21, 21, 0.8891491597) 50%, rgb(0, 0, 0) 100%), url("../images/banner.png");
   background-attachment: fixed;
   background-position: center;
